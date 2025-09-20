@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2025-09-20 11:02:33">
+<content_block_programmatic action="INSERT_OR_UPDATE">
+<active>true</active>
+<category>general</category>
+<condition/>
+<conditional>false</conditional>
+<frame display_value=""/>
+<logged_on>false</logged_on>
+<name>Custom Tag Filter V3</name>
+<programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <style>
+        /* Main container */
+        .filter-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            /* vertical spacing between elements */
+            margin: 20px;
+            /* uniform margin around everything */
+        }
+
+        /* Reset button wrapper */
+        .reset-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* Switch container goes to right edge */
+        .switch-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            /* push to far right */
+            gap: 8px;
+            /* spacing between text and switch */
+            margin-right: 20px;
+            /* same margin as container */
+        }
+
+        /* The switch - the box around the slider */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
+    <g:evaluate var="jvar_labelGR" jelly="true">
+		<!-- Get tags ordered A-Z to use as dropdown options -->
+        var labelGR = new GlideRecord("label");
+        labelGR.addActiveQuery();
+        labelGR.setLimit(100);
+        labelGR.orderBy("name");
+        labelGR.query();
+    </g:evaluate>
+
+    <script type="text/javascript">
+        // Initialize select2 element
+        $j(document).ready(function() {
+            $j(".js-tag-filter").select2({
+                placeholder: "Select Tag(s)",
+                allowClear: true
+            });
+        });
+    </script>
+
+    <div class="filter-container">
+        <!-- Select2 element -->
+        <select name="tagSelect" id="tagSelect" onchange="triggerTagFilter()" class="js-tag-filter" style="width: 100%;" multiple="true">
+            <option value=""></option>
+            <j:while test="${labelGR.next()}">
+                <option value="${labelGR.getUniqueValue()}">${labelGR.getValue('name')}</option>
+            </j:while>
+        </select>
+
+        <!-- Reset filter button -->
+        <div class="reset-container">
+            <button id="tag-reset-button" onclick="resetTagFilter();">Reset filter</button>
+        </div>
+
+        <div>
+            <div class="switch-container">
+                <span>Excluding</span>
+                <label class="switch">
+                    <input type="checkbox" id="excluding-slider" onchange="triggerTagFilter()"></input>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="switch-container">
+                <span>AND/OR</span>
+                <label class="switch">
+                    <input type="checkbox" id="andOrSlider" onchange="triggerTagFilter()"></input>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const filterPreferenceId = "custom.interactive.702058160f807a9096e16dd530d1b241";
+
+        // Initialize a dashboard handler to provide interactive filter funtionality
+        var dmh = new DashboardMessageHandler(filterPreferenceId);
+
+        function triggerTagFilter() {
+
+            // Array of selected values
+            var selectedTags = $j("#tagSelect").val();
+
+            var excluding = $j("#excluding-slider").prop("checked");
+
+            var andOrSlider = $j("#andOrSlider").prop("checked");
+
+            // If no option is selected, clear the filter and exit early.
+            if (selectedTags === null || selectedTags.length == 0) {
+                SNC.canvas.interactiveFilters.removeDefaultValue(dmh._unique_id, false);
+                dmh.removeFilter();
+                return;
+            }
+            // If there's at least one selection
+            else {
+                //Force a smaller "x" button on the multiple choice, overriding system CSS
+                $j(".select2-search-choice-close").css({
+                    "width": "5px",
+                    "height": "5px",
+                    "top": "4px",
+                    "font-size": "10px",
+                    "padding-right": "10px"
+                });
+            }
+
+            var encodedQuery = "";
+            var operator = excluding ? "EXCLUDING" : "=";
+			var separatorChar = andOrSlider ? "^OR" : "^";
+
+            selectedTags.forEach((tagSysId, index) => {
+                var condition = index == 0 ? "sys_tags." + tagSysId + operator + tagSysId : separatorChar + "sys_tags." + tagSysId + operator + tagSysId;
+                encodedQuery += condition;
+            });
+
+            taskFilterCondition = dmh.getFilterMessage("task", encodedQuery);
+
+            var finalFilter = [taskFilterCondition];
+
+            // Set message value
+            SNC.canvas.interactiveFilters.setDefaultValue({
+                id: dmh._unique_id,
+                filters: finalFilter,
+            }, false);
+
+            // Publish the interactive filter message
+            dmh.publishMessage(finalFilter);
+        }
+
+        // Reset filter button handler
+        function resetTagFilter() {
+            $j("#excluding-slider").prop("checked", false);
+            $j("#andOrSlider").prop("checked", false);
+            $j("#tagSelect").val([]).trigger("change");
+        }
+
+        window.triggerTagFilter = triggerTagFilter;
+    </script>
+
+</j:jelly>]]></programmatic_content>
+<sys_class_name>content_block_programmatic</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-19 18:56:33</sys_created_on>
+<sys_id>b68d541a0fc07a9096e16dd530d1b2c6</sys_id>
+<sys_mod_count>13</sys_mod_count>
+<sys_name>Custom Tag Filter V3</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>content_block_programmatic_b68d541a0fc07a9096e16dd530d1b2c6</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-19 19:30:38</sys_updated_on>
+<two_phase>false</two_phase>
+</content_block_programmatic>
+</unload>
