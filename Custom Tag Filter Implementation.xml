@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2025-09-20 11:04:39">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Custom Tag Filters</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>27d945500f84be5096e16dd530d1b26c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-20 11:04:38</sys_created_on>
+<sys_id>bf1bb3160fc4ba9096e16dd530d1b24a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-20 11:04:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_b33581980f44be5096e16dd530d1b280</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="b33581980f44be5096e16dd530d1b280" sys_domain="global" table="u_tag_filter_config" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-20 04:55:42</sys_created_on><sys_id>2ba6a25a0fcc7a9096e16dd530d1b274</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_tag_filter_config" sys_domain="global" view="Default view">b33581980f44be5096e16dd530d1b280</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-20 04:55:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_tag_filter_conditions</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-20 04:55:42</sys_created_on><sys_id>67a6a25a0fcc7a9096e16dd530d1b275</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_tag_filter_config" sys_domain="global" view="Default view">b33581980f44be5096e16dd530d1b280</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-20 04:55:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_tables</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-20 04:55:42</sys_created_on><sys_id>6fa6a25a0fcc7a9096e16dd530d1b275</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_tag_filter_config" sys_domain="global" view="Default view">b33581980f44be5096e16dd530d1b280</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-20 04:55:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_tag_filter_config</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-13 16:42:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b33581980f44be5096e16dd530d1b280</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_tag_filter_config</sys_name><sys_overrides/><sys_package display_value="Tag Interactive Filter" source="88d4c5580f44be5096e16dd530d1b2bb">88d4c5580f44be5096e16dd530d1b2bb</sys_package><sys_policy/><sys_scope display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</sys_scope><sys_update_name>sys_ui_section_b33581980f44be5096e16dd530d1b280</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-13 16:42:10</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>501769417</payload_hash>
+<remote_update_set display_value="Custom Tag Filters">bf1bb3160fc4ba9096e16dd530d1b24a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-20 11:04:38</sys_created_on>
+<sys_id>331bb3160fc4ba9096e16dd530d1b24c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>199657a5f440000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-20 11:04:38</sys_updated_on>
+<table>u_tag_filter_config</table>
+<target_name>Tag Filter Config</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>6ba6a25a2dcc7a90e2cab45e2198d977</update_guid>
+<update_guid_history>6ba6a25a2dcc7a90e2cab45e2198d977:501769417,23d945501384be500dad1c4db687436e:-929922244,c4458198d444be5011e25125702cb783:579198817</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_macro_9dbe09d40f84be5096e16dd530d1b23d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description/&gt;&lt;media_type/&gt;&lt;name&gt;tag_filter&lt;/name&gt;&lt;scoped_name/&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-13 17:23:45&lt;/sys_created_on&gt;&lt;sys_id&gt;9dbe09d40f84be5096e16dd530d1b23d&lt;/sys_id&gt;&lt;sys_mod_count&gt;28&lt;/sys_mod_count&gt;&lt;sys_name&gt;tag_filter&lt;/sys_name&gt;&lt;sys_package display_value="Tag Interactive Filter" source="88d4c5580f44be5096e16dd530d1b2bb"&gt;88d4c5580f44be5096e16dd530d1b2bb&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Tag Interactive Filter"&gt;88d4c5580f44be5096e16dd530d1b2bb&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_9dbe09d40f84be5096e16dd530d1b23d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-20 10:49:09&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+
+    &lt;j:if test="${RP.isPreview()}"&gt;
+        &lt;center&gt;${gs.getMessage('no_preview_available')}&lt;/center&gt; &lt;!-- TODO - Create message --&gt;
+    &lt;/j:if&gt;
+
+    &lt;script type="text/javascript"&gt;
+        (function() {
+            var uuid = "${jvar_uid}";
+            // Initialize select2 element
+            $j(document).ready(function() {
+                $j("#${jvar_uid} #tagSelect").select2({
+                    placeholder: 'Select Tag(s)',
+                    allowClear: true,
+                    dropdownParent: $('#' + uuid)
+                });
+            });
+        })();
+    &lt;/script&gt;
+
+    &lt;style&gt;
+        /* Main container */
+        .filter-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            /* vertical spacing between elements */
+            margin: 20px;
+            /* uniform margin around everything */
+        }
+
+        /* Reset button wrapper */
+        .reset-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* Switch container goes to right edge */
+        .switch-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            /* push to far right */
+            gap: 8px;
+            /* spacing between text and switch */
+            margin-right: 20px;
+            /* same margin as container */
+        }
+
+        /* The switch - the box around the slider */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    &lt;/style&gt;
+
+    &lt;g:evaluate var="jvar_labelGR" object="true" jelly="true"&gt;
+        var unEscapedEncodedQuery = GlideStringUtil.unEscapeHTML("${jvar_tagEncodedQuery}");
+        var labelGR = new GlideRecordSecure("label");
+        labelGR.addEncodedQuery(unEscapedEncodedQuery);
+        labelGR.orderBy("name");
+        labelGR.query();
+    &lt;/g:evaluate&gt;
+
+    &lt;j:if test="${!RP.isPreview()}"&gt;
+        &lt;div id="${jvar_uid}" class="filter-container"&gt;
+            &lt;!-- Select2 element --&gt;
+            &lt;select name="tagSelect" id="tagSelect" class="js-tag-filter" style="width: 100%;" multiple="true"&gt;
+                &lt;j:while test="${labelGR.next()}"&gt;
+                    &lt;option value="${labelGR.getUniqueValue()}"&gt;${labelGR.getValue('name')}&lt;/option&gt;
+                &lt;/j:while&gt;
+            &lt;/select&gt;
+
+            &lt;!-- Reset filter button --&gt;
+            &lt;div class="reset-container"&gt;
+                &lt;button id="tag-reset-button"&gt;Reset filter&lt;/button&gt;
+            &lt;/div&gt;
+
+            &lt;div class="switch-container"&gt;
+                &lt;span&gt;Excluding&lt;/span&gt;
+                &lt;label class="switch"&gt;
+                    &lt;input type="checkbox" id="excluding-slider"&gt;&lt;/input&gt;
+                    &lt;span class="slider round"&gt;&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="switch-container"&gt;
+                &lt;span&gt;AND/OR&lt;/span&gt;
+                &lt;label class="switch"&gt;
+                    &lt;input type="checkbox" id="andOrSlider"&gt;&lt;/input&gt;
+                    &lt;span class="slider round"&gt;&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/j:if&gt;
+
+    &lt;script&gt;
+        (function() {
+            var uuid = "${jvar_uid}";
+            var uniqueContainer = $j("#" + uuid);
+            var tablesString = "${jvar_tables}";
+            var tablesArr = tablesString.split(",");
+            var tagsSelect = uniqueContainer.find("#tagSelect");
+            var canvasId = tagsSelect.closest("[data-uuid]") ? tagsSelect.closest("[data-uuid]").attr("data-uuid") : "";
+
+            // Initialize a dashboard handler to provide interactive filter funtionality
+            var dmh = new DashboardMessageHandler("select_custom_interactive_tag_filter-" + canvasId);
+            
+            // Selected Tags are stored in an array.
+            var selectedTags = [];
+
+            // Reset filter button
+            var resetButton = uniqueContainer.find("#tag-reset-button");
+            // Excluding slider checkbox
+			var excludingSlider = uniqueContainer.find("#excluding-slider");
+            var excludingBool = uniqueContainer.find("#excluding-slider").prop("checked");
+            // AND/OR slider checkbox
+			var andOrSlider = uniqueContainer.find("#andOrSlider");
+            var andOrBool = uniqueContainer.find("#andOrSlider").prop("checked");
+
+            resetButton.click(function(event) {
+                // Empty filter array, clear selections in select2 and trigger change event
+                uniqueContainer.find("#tagSelect").val([]).trigger('change');
+            });
+
+            excludingSlider.change(function(event) {
+                excludingBool = uniqueContainer.find("#excluding-slider").prop("checked");
+                uniqueContainer.find("#tagSelect").trigger('change');
+            });
+
+            andOrSlider.change(function(event) {
+                andOrBool = uniqueContainer.find("#andOrSlider").prop("checked");
+                uniqueContainer.find("#tagSelect").trigger('change');
+            });
+
+            // Select2 element onChange handler
+            tagsSelect.change(function(event) {
+                // Update array and operator
+                selectedTags = uniqueContainer.find("#tagSelect").val();
+
+                // If there's at least one selection
+                if (selectedTags != null) {
+                    //Force a smaller 'x' button on the multiple choice, overriding system CSS
+                    $j(".select2-search-choice-close").css({
+                        "width": "5px",
+                        "height": "5px",
+                        "top": "4px",
+                        "font-size": "10px",
+                        "padding-right": "10px"
+                    });
+                }
+
+                // Run the filter
+                applyTagFilter();
+
+            });
+
+            // Filter based on selected tags
+            function applyTagFilter() {
+                // If no option is selected, clear the filter and exit early.
+                if (selectedTags === null || selectedTags.length == 0) {
+                    SNC.canvas.interactiveFilters.removeDefaultValue(dmh._unique_id, false);
+                    dmh.removeFilter();
+                    return;
+                }
+
+                var encodedQuery = "";
+                var operator = excludingBool ? "EXCLUDING" : "=";
+                var separatorChar = andOrBool ? "^OR" : "^";
+
+                // At least one tag was selected, so create the filter string
+                selectedTags.forEach((tagSysId, index) =&gt; {
+                    var query = index == 0 ? "sys_tags." + tagSysId + operator + tagSysId : separatorChar + "sys_tags." + tagSysId + operator + tagSysId;
+                    encodedQuery += query;
+                });
+
+                var finalFilter = [];
+
+                // Add the filter message for each table
+                tablesArr.forEach(function(table) {
+                    var filterMessage = dmh.getFilterMessage(table, encodedQuery)
+                    finalFilter.push(filterMessage);
+                });
+
+                // Set message value
+                SNC.canvas.interactiveFilters.setDefaultValue({
+                    id: dmh._unique_id,
+                    filters: finalFilter,
+                }, false);
+
+                // Publish the interactive filter message
+                dmh.publishMessage(finalFilter);
+            }
+        })();
+    &lt;/script&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+<payload_hash>608627484</payload_hash>
+<remote_update_set display_value="Custom Tag Filters">bf1bb3160fc4ba9096e16dd530d1b24a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-20 11:04:38</sys_created_on>
+<sys_id>7f1bb3160fc4ba9096e16dd530d1b24b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19966bdf77f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-20 11:04:38</sys_updated_on>
+<table/>
+<target_name>tag_filter</target_name>
+<type>Macro</type>
+<update_domain>global</update_domain>
+<update_guid>8197739e0984ba90b3b3a93f474f619a</update_guid>
+<update_guid_history>8197739e0984ba90b3b3a93f474f619a:608627484,22373f5e2f84ba90790fadbaa3972caa:-984523172,daf6735ea984ba904dd7e64229993fb8:-399425659,bcb63b1e7484ba9038a6259b73381aff:-1854867191,ab767f5adf84ba90ca7261b83130ff1a:873714174,26553f9a6d84ba9062d1bc889ae60ccc:-204420562,56057f5a3184ba9090b067da63f58a61:-163571400,43a4775acb84ba907a406b36fcff6a42:-1552455472,3734bf1a8284ba9064aed0e5fa8ad51e:1744813062,6ff3bfd6a784ba903b68446de6164b62:2060941644,ea437b568584ba90e8ee6bf2f8bfa134:1598461007,0403b7969a84ba901c07e0b089563e22:-1676594161,a9827796d484ba9082b9bc8f06127c3c:1887507759,35f17f169784ba90bff6402cb409f760:1224159840,a961bfd67d44ba90dfcd0c837ec34b7c:1702554016,8801b316b384ba903dd22e6195f2c310:1027602921,c2607f920f84ba905ffb43126a2336f8:-1366784366,d91bafda7f44ba908dd45796216a21cc:460911738,33b8875a2d80ba9030af71340c658fe9:28768045,f5f6c71ea240ba901aa4bd7ec6bc1c42:-1499181344,75660b1ac180ba902ed3a6d28e315f13:1071022574,7e560bd66e80ba908288eddfdd40af36:-1948349174,4da587d66c80ba90c069222bae2f3662:-317226441,6755cf963380ba90926ecf9a194d1f34:1720843944,74354b9e2340ba90840592ef8c4a10c5:-1516631872,9ae443968d80ba90f1f8b1129c57de0c:-1487775344,3ab4471ed240ba901d583a774a6814c4:-33272279,a3757a9eca00ba903f1a489993a4e4f1:-1821814637,01cec9509284be50102a69a2def49d8c:-2062044858</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_tag_filter_config_u_tables</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_tables" table="u_tag_filter_config"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Tables</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_tables</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">glide_list</internal_type><mandatory>false</mandatory><max_length>1024</max_length><name>u_tag_filter_config</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="sys_db_object">sys_db_object</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-20 04:54:17</sys_created_on><sys_id>76566a1a0fcc7a9096e16dd530d1b2db</sys_id><sys_name>Tables</sys_name><sys_package display_value="Tag Interactive Filter" source="88d4c5580f44be5096e16dd530d1b2bb">88d4c5580f44be5096e16dd530d1b2bb</sys_package><sys_policy/><sys_scope display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</sys_scope><sys_update_name>sys_dictionary_u_tag_filter_config_u_tables</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-20 04:54:18</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>885981109</payload_hash>
+<remote_update_set display_value="Custom Tag Filters">bf1bb3160fc4ba9096e16dd530d1b24a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-20 11:04:38</sys_created_on>
+<sys_id>b31bb3160fc4ba9096e16dd530d1b24b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>199657916cd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-20 11:04:38</sys_updated_on>
+<table>u_tag_filter_config</table>
+<target_name>Tag Filter Config.Tables</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>c3566a1a75cc7a9000aef0f5eae17dfe</update_guid>
+<update_guid_history>c3566a1a75cc7a9000aef0f5eae17dfe:885981109,cb566a1ac9cc7a9022a1dc91230998f5:-1935475924</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_tag_filter_config_u_tables_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_tables" label="Tables" language="en" table="u_tag_filter_config"><sys_documentation action="INSERT_OR_UPDATE"><element>u_tables</element><help/><hint/><label>Tables</label><language>en</language><name>u_tag_filter_config</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-20 04:54:17</sys_created_on><sys_id>ba566a1a0fcc7a9096e16dd530d1b2dd</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Tables</sys_name><sys_package display_value="Tag Interactive Filter" source="88d4c5580f44be5096e16dd530d1b2bb">88d4c5580f44be5096e16dd530d1b2bb</sys_package><sys_policy/><sys_scope display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</sys_scope><sys_update_name>sys_documentation_u_tag_filter_config_u_tables_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-20 04:54:18</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>487767230</payload_hash>
+<remote_update_set display_value="Custom Tag Filters">bf1bb3160fc4ba9096e16dd530d1b24a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-20 11:04:38</sys_created_on>
+<sys_id>bb1bb3160fc4ba9096e16dd530d1b24b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>199657917730000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-20 11:04:38</sys_updated_on>
+<table>u_tag_filter_config</table>
+<target_name>Tag Filter Config.Tables</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>c356aa1a09cc7a90d820979f0170ff0a</update_guid>
+<update_guid_history>c356aa1a09cc7a90d820979f0170ff0a:487767230,c356aa1a2acc7a90fa60233b3559d403:487767230,0b566a1a8acc7a900e09e1d394f613f7:-366557943</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Tag Interactive Filter">88d4c5580f44be5096e16dd530d1b2bb</application>
+<category>customer</category>
+<comments/>
+<name>sys_widgets_82bc2a520f00ba9096e16dd530d1b25f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_widgets"&gt;&lt;sys_widgets action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;name&gt;Tag Filters&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;renderer/&gt;&lt;renderer_type&gt;javascript&lt;/renderer_type&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[/**
+ * To create a new "tag" filter, simply add a new object within the return statement in the "sections" function.
+ * @param string tables: Comma-separated list of tables where the filter should be applied
+ * @param string tagEncodedQuery: EncodedQuery to limit the choosable tags (if necessary)
+ **/
+
+var configData = {};
+
+(function() {
+	// Retrieve the config records
+    var filterConfigGR = new GlideRecord("u_tag_filter_config");
+    filterConfigGR.addNotNullQuery("u_tables");
+    filterConfigGR.addNotNullQuery("u_name");
+    filterConfigGR.query();
+
+    while (filterConfigGR.next()) {
+		// Get the table names
+        var tablesArr = filterConfigGR.getValue("u_tables").split(",");
+        tablesArr.forEach(function(tableSysId, index) {
+            var tableGR = new GlideRecord("sys_db_object");
+			if (tableGR.get(tableSysId)) {
+				tablesArr[index] = tableGR.getValue("name");
+			}
+
+        });
+
+        configData[filterConfigGR.getValue("u_name")] = {
+            "tables": tablesArr.join(","),
+            "tagEncodedQuery": filterConfigGR.getValue("u_tag_filter_conditions"),
+            "sysId": filterConfigGR.getUniqueValue()
+        };
+    }
+})();
+
+function sections() {
+    return configData;
+}
+
+function render() {
+    var tables = renderer.getPreferences().get("tables");
+    var tagEncodedQuery = renderer.getPreferences().get("tagEncodedQuery");
+    if (tables) {
+        var jr = new GlideJellyRunner();
+        renderer.getRenderProperties().setDeferInlineScripts(false);
+        jr.setRenderProperties(renderer.getRenderProperties());
+        jr.setVariable('jvar_uid', gs.generateGUID());
+        jr.setVariable('jvar_tagEncodedQuery', tagEncodedQuery);
+        jr.setVariable('jvar_tables', tables);
+        return jr.runFromTemplate('tag_filter.xml');
+    } else {
+        return 'Invalid widget type';
+    }
+}
+
+function getEditLink() {
+    if (!gs.hasRole('admin'))
+        return '';
+    return "u_tag_filter_config.do?sys_id=" + renderer.getPreferences().get("sysId");
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_widgets&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-20 05:22:05&lt;/sys_created_on&gt;&lt;sys_id&gt;82bc2a520f00ba9096e16dd530d1b25f&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Tag Filters&lt;/sys_name&gt;&lt;sys_package display_value="Tag Interactive Filter" source="88d4c5580f44be5096e16dd530d1b2bb"&gt;88d4c5580f44be5096e16dd530d1b2bb&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Tag Interactive Filter"&gt;88d4c5580f44be5096e16dd530d1b2bb&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_widgets_82bc2a520f00ba9096e16dd530d1b25f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-20 06:40:16&lt;/sys_updated_on&gt;&lt;top_level_category&gt;false&lt;/top_level_category&gt;&lt;/sys_widgets&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;82bc2a520f00ba9096e16dd530d1b25f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-20 06:28:55&lt;/sys_created_on&gt;&lt;sys_id&gt;090cb2d60f40ba9096e16dd530d1b294&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-20 06:28:55&lt;/sys_updated_on&gt;&lt;table&gt;sys_widgets&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-522783649</payload_hash>
+<remote_update_set display_value="Custom Tag Filters">bf1bb3160fc4ba9096e16dd530d1b24a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-20 11:04:38</sys_created_on>
+<sys_id>f31bb3160fc4ba9096e16dd530d1b24c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19965da1c680000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-20 11:04:38</sys_updated_on>
+<table/>
+<target_name>Tag Filters</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>db9eb21eed40ba908160d0631268cd60</update_guid>
+<update_guid_history>db9eb21eed40ba908160d0631268cd60:-522783649,cd5cbe1a6b40ba9052bd9bb47dae83e2:1841116092,d10cb2d64b40ba903d994ea7e0b9ce98:-2117130472,e9c43a5e6d00ba9091f8e764c5902a27:-509599176,3fafa616c000ba902c5a63c87926c477:-1173716052,9a8f6e56df00ba900f23b781a26bff50:-1487264701,895f2a566300ba9082b9e0f45c600fe1:-493213658,e5bee616dd00ba90c641249986920aa3:1527356442,206ea6161a00ba909aa93333138b9306:-635795489,82fd2ed25800ba906c2de92d991f2e27:-296810350,a45d6e92ce00ba90efb2ad76f6353261:-742321130,d33dea92ff00ba906cefe2f98972c941:811549525,fb1d2a92a700ba90d15a79b01f98347c:1443922118,c6bc2a52d800ba90fcb600aed7819f60:372768535</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
