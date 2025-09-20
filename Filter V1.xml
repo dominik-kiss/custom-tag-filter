@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2025-09-20 11:02:11">
+<content_block_programmatic action="INSERT_OR_UPDATE">
+<active>true</active>
+<category>general</category>
+<condition/>
+<conditional>false</conditional>
+<frame display_value=""/>
+<logged_on>false</logged_on>
+<name>Custom Tag Filter</name>
+<programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <g:evaluate var="jvar_labelGR" jelly="true">
+        var labelGR = new GlideRecord("label");
+        labelGR.addActiveQuery();
+        labelGR.setLimit(100);
+        labelGR.orderBy("name");
+        labelGR.query();
+    </g:evaluate>
+
+    <script type="text/javascript">
+        // Initialize select2 element
+        $j(document).ready(function() {
+            $j(".js-tag-filter").select2({
+                placeholder: "Select Tag",
+                allowClear: true
+            });
+        });
+    </script>
+
+    <div>
+        <!-- Select2 element -->
+        <select name="tagSelect" id="tagSelect" onchange='triggerTagFilter()' class="js-tag-filter" style="width: 100%;">
+            <option value=""></option>
+            <j:while test="${labelGR.next()}">
+                <option value="${labelGR.getUniqueValue()}">${labelGR.getValue('name')}</option>
+            </j:while>
+        </select>
+
+        <div>
+            <div>
+                <!-- Reset filter button -->
+                <button id="tag-reset-button" onclick="resetTagFilter();">Reset filter</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const filterPreferenceId = "custom.interactive.702058160f807a9096e16dd530d1b241";
+
+        // Initialize a dashboard handler to provide interactive filter funtionality
+        var dmh = new DashboardMessageHandler(filterPreferenceId);
+
+        var selectedTag
+
+        function triggerTagFilter() {
+
+            selectedTag = $j('#tagSelect').val();
+
+            // If no option is selected, clear the filter and exit early.
+            if (selectedTag === null) {
+                SNC.canvas.interactiveFilters.removeDefaultValue(dmh._unique_id, false);
+                dmh.removeFilter();
+                return;
+            }
+
+            // If there's at least one selection
+            if (selectedTag) {
+                //Force a smaller 'x' button on the multiple choice, overriding system CSS
+                $j(".select2-search-choice-close").css({
+                    "width": "5px",
+                    "height": "5px",
+                    "top": "4px",
+                    "font-size": "10px",
+                    "padding-right": "10px"
+                });
+            }
+
+			// Build filter condition for any table with "Tags" field
+            var taskFilterCondition = dmh.getFilterMessage("task", "sys_tags." + selectedTag + "=" + selectedTag);
+            var finalFilter = [taskFilterCondition];
+
+            // Set message value
+            SNC.canvas.interactiveFilters.setDefaultValue({
+                id: dmh._unique_id,
+                filters: finalFilter,
+            }, false);
+
+            // Publish the interactive filter message
+            dmh.publishMessage(finalFilter);
+
+        }
+
+        // Reset filter button handler
+        function resetTagFilter() {
+            // Empty filter array, clear selection in select2 and trigger change event
+            $j('#tagSelect').val([]).trigger('change');
+        }
+
+        window.triggerTagFilter = triggerTagFilter;
+    </script>
+
+</j:jelly>]]></programmatic_content>
+<sys_class_name>content_block_programmatic</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-09-19 17:57:59</sys_created_on>
+<sys_id>702058160f807a9096e16dd530d1b241</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_name>Custom Tag Filter</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>content_block_programmatic_702058160f807a9096e16dd530d1b241</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-09-19 18:13:31</sys_updated_on>
+<two_phase>false</two_phase>
+</content_block_programmatic>
+</unload>
