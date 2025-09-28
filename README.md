@@ -2,7 +2,9 @@
 
 This project provides a **reusable, configurable implementation of custom interactive filters** for ServiceNow dashboards — built to overcome the limitations of out-of-the-box filters.  
 
-More details [here](https://www.linkedin.com/pulse/custom-interactive-filters-slightly-less-awful-new-world-dominik-kiss-pi1xf).
+![](Media/custom-tag-filter-gif.gif)
+
+More details in the article [here](https://www.linkedin.com/pulse/custom-interactive-filters-slightly-less-awful-new-world-dominik-kiss-pi1xf).
 
 ## Why?  
 ServiceNow’s native Interactive Filters don’t always cut it. Common requirements that aren’t supported include:  
@@ -27,7 +29,13 @@ Historically, such solutions required **Dynamic Content Blocks with JellyScript*
 1. **Configuration Table** – Define which tables and filter conditions apply to each filter.  
 2. **Widget** – Reads configuration and passes values to the UI Macro.  
 3. **UI Macro** – Renders the filter UI (tags dropdown, toggles, reset button).  
-4. **Client Script Logic** – Publishes interactive filter messages back to the dashboard, applying conditions dynamically.  
+4. **Script Logic** – Publishes interactive filter messages back to the dashboard, applying conditions dynamically.  
+
+![](Media/tag_filter_config.PNG)
+
+![](Media/tag_filter_widget.PNG)
+
+![](Media/tag_filter_macro.PNG)
 
 ## Demo Features  
 - Multi-select tag dropdown (powered by Select2)  
